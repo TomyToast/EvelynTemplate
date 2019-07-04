@@ -1,0 +1,36 @@
+*,
+*:after,
+*:before {
+    // width: 100%;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+
+}
+
+html,
+body {
+    width: 100%;
+}
+
+main {
+    width: 100vw;
+    height: 100vh;
+}
+
+
+.container {
+    max-width: 90%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.jc-space {
+    justify-content: space-between;
+}
+
+.fd-col {
+    flex-direction: column;
+}
