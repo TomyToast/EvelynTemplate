@@ -1,0 +1,248 @@
+@import '../mixins/mixins.scss';
+@import '../variables/colors.scss';
+
+.meetEvelyn {
+
+    &-title {
+        font-size: 1.8em;
+        margin: 2em 0 1em 0;
+        text-align: center;
+    }
+
+    &-description {
+        font-size: 1.2em;
+        text-align: center;
+        color: grey;
+        line-height: 1.2;
+    }
+
+    &-card {
+        width: 20em;
+        height: 13em;
+        margin: 1em;
+        position: relative;
+
+        @include centered;
+
+        &::after {
+            content: '';
+            width: 5em;
+            height: 5em;
+            clip-path: polygon(100% 0%, 100% 100%, 0% 100%);
+            background: map-get($colors, "light-grey");
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            z-index: -1;
+        }
+
+        &::before {
+            content: '';
+            width: 5em;
+            height: 5em;
+            clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+            background: map-get($colors, "light-grey");
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+
+        &-board-1,
+        &-board-2,
+        &-board-3 {
+            width: 80%;
+            height: 7rem;
+            box-shadow: .1em -0.1em 1.5em #ccc;
+
+            position: relative;
+        }
+
+        &-board-1 {
+
+            &-rectangle {
+                width: 2.5em;
+                height: 5em;
+                box-shadow: .1em -0.1em 1.5em #ccc;
+                background: #fff;
+                position: absolute;
+                left: 20%;
+                bottom: -20%;
+
+                &::after {
+                    content: '';
+                    width: 3em;
+                    height: 3em;
+                    clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+                    background: map-get($colors, "primary");
+                    position: absolute;
+                    top: -25%;
+                    left: -20%;
+                }
+
+                &::before {
+                    content: '';
+                    width: 1em;
+                    height: 1em;
+                    transform: rotate(45deg);
+                    background: map-get($colors, "secondary-darker");
+                    position: absolute;
+                    top: 25%;
+                    right: -120%;
+                }
+            }
+
+            &-square {
+                width: 3em;
+                height: 3em;
+                box-shadow: .1em -0.1em 1.5em #ccc;
+                background: #fff;
+                position: absolute;
+                right: 10%;
+                top: -15%;
+
+                &::before {
+                    content: '';
+                    width: 2em;
+                    height: 2em;
+                    border-radius: 5em;
+                    background: map-get($colors, "secondary");
+                    position: absolute;
+                    bottom: -100%;
+                    right: 60%;
+                }
+            }
+        }
+
+        &-board-2 {
+
+            &-rectangle {
+                width: 2.5em;
+                height: 5em;
+                box-shadow: .1em -0.1em 1.5em #ccc;
+                background: #fff;
+                position: absolute;
+                right: 10%;
+                bottom: 50%;
+
+                &::after {
+                    content: '';
+                    width: 4em;
+                    height: 4em;
+                    clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+                    background: map-get($colors, "secondary-darker");
+                    position: absolute;
+                    top: 55%;
+                    right: 180%;
+                }
+
+                &::before {
+                    content: '';
+                    width: 1em;
+                    height: 1em;
+                    transform: rotate(45deg);
+                    background: map-get($colors, "secondary");
+                    position: absolute;
+                    top: 95%;
+                    right: 130%;
+                }
+            }
+
+            &-square {
+                width: 3em;
+                height: 3em;
+                box-shadow: .1em -0.1em 1.5em #ccc;
+                background: #fff;
+                transform: rotate(45deg);
+                position: absolute;
+                right: 70%;
+                top: 75%;
+
+                &::before {
+                    content: '';
+                    width: 3em;
+                    height: 3em;
+                    border-radius: 5em;
+                    background: map-get($colors, "primary");
+                    position: absolute;
+                    top: -250%;
+                    left: 250%;
+                }
+            }
+        }
+
+        &-board-3 {
+
+            &-rectangle {
+                width: 2.5em;
+                height: 5em;
+                box-shadow: .1em -0.1em 1.5em #ccc;
+                background: #fff;
+                position: absolute;
+                right: 50%;
+                top: -30%;
+
+                &::after {
+                    content: '';
+                    width: 4em;
+                    height: 4em;
+                    clip-path: polygon(100% 0%, 0% 100%, 0% 0%);
+                    background: map-get($colors, "secondary-darker");
+                    position: absolute;
+                    bottom: -55%;
+                    left: 50%;
+                }
+
+                &::before {
+                    content: '';
+                    width: 1em;
+                    height: 1em;
+                    transform: rotate(45deg);
+                    background: map-get($colors, "primary");
+                    position: absolute;
+                    top: 95%;
+                    right: -190%;
+                }
+            }
+
+            &-square {
+                width: 3em;
+                height: 3em;
+                box-shadow: .1em -0.1em 1.5em #ccc;
+                background: #fff;
+                position: absolute;
+                right: 70%;
+                top: 75%;
+
+                &::before {
+                    content: '';
+                    width: 3em;
+                    height: 3em;
+                    border-radius: 5em;
+                    background: map-get($colors, "secondary");
+                    position: absolute;
+                    bottom: 20%;
+                    left: 250%;
+                }
+            }
+        }
+    }
+
+    &-text {
+        width: 100%;
+
+        &-title {
+            font-size: 1.5em;
+            margin-bottom: 1em;
+            text-align: center;
+        }
+
+        &-description {
+            font-size: 1.1em;
+            text-align: center;
+            color: grey;
+            line-height: 1.2;
+            margin-bottom: 3em;
+        }
+    }
+}

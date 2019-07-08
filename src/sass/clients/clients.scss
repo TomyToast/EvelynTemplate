@@ -2,5 +2,9 @@
 
     &-ul {
         list-style: none;
+
+        &-li {
+            margin: 1em 0;
+        }
     }
 }
