@@ -1,9 +1,10 @@
 @import '../mixins/mixins.scss';
 @import '../variables/variables.scss';
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss";
+@import "../fontawesome-free/scss/fontawesome.scss";
+@import "../fontawesome-free/scss/solid.scss";
 
 .pricing {
+    width: 100%;
 
     &-title {
         font-size: 2em;
@@ -13,9 +14,12 @@
 
     &-card {
 
-        width: 20em;
+        width: 80%;
+        max-width: 20em;
+        height: 24em;
         box-shadow: .1em -0.1em 1.5em #ccc;
         margin-bottom: 1em;
+        margin-right: 1em;
         padding: 1em 1em 1em 2em;
 
         &-title {
@@ -27,7 +31,7 @@
         &-price {
             font-size: 2.5em;
             font-weight: bold;
-            margin: .5em 0 1em 0;
+            margin: .5em 0;
 
             &::first-letter {
                 font-size: .7em;
@@ -46,7 +50,7 @@
                 @extend .fas;
 
                 &::before {
-                    content: fa-content($fa-var-check);
+                    content: fa-content($fa-var-check-circle);
                     margin-right: 0.5em;
                     color: map-get($colors, "secondary");
                 }
@@ -58,7 +62,6 @@
             font-size: 1em;
             color: #fff;
             display: inline-block;
-            margin: 2em auto 0.5em auto;
             padding: 1em;
             text-align: center;
             text-decoration: none;
@@ -69,8 +72,10 @@
 
 .btn-1 {
     background: linear-gradient(270deg, #00C6A7 0%, #00A2B8 150%);
+    margin: 4em auto 0.5em auto;
 }
 
 .btn-2 {
     background: linear-gradient(90deg, #00A2B8 50%, #00A2B8 100%);
+    margin: 2em auto 0.5em auto;
 }

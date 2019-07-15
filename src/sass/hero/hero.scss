@@ -1,6 +1,22 @@
 .hero {
     width: 100%;
     color: #fff;
+    background: linear-gradient(57deg, #00C6A7 0%, #1E4D92 70%);
+    padding-bottom: 2em;
+    position: relative;
+    overflow: hidden;
+
+
+    &::before {
+        content: '';
+        width: 155em;
+        height: 80em;
+        background: #fff;
+        position: absolute;
+        left: -50%;
+        top: 70%;
+        transform: rotate(170deg);
+    }
 
     &-title,
     &-description {

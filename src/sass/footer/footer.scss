@@ -1,8 +1,8 @@
 @import '../mixins/mixins.scss';
 @import '../variables/variables.scss';
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss";
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss";
-@import "../../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss";
+@import "../fontawesome-free/scss/fontawesome.scss";
+@import "../fontawesome-free/scss/regular.scss";
+@import "../fontawesome-free/scss/brands.scss";
 
 .footer {
     width: 100%;
@@ -38,6 +38,7 @@
             color: map-get($colors, 'grey');
             display: inline-block;
             margin: 0 .8em;
+            cursor: pointer;
 
         }
     }
@@ -49,6 +50,7 @@
         &-element {
             color: map-get($colors, 'primary');
             margin: 0.5em 1em;
+            cursor: pointer;
         }
     }
 

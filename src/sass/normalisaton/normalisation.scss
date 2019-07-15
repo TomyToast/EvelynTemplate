@@ -9,15 +9,26 @@
 }
 
 body {
-    // width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+}
+
+header {
+    width: 100%;
+    max-width: 80em;
 }
 
 main {
     width: 100%;
+    max-width: 80em;
+}
+
+p {
+    max-width: 45em;
 }
 
 
@@ -39,4 +50,13 @@ main {
 
 .f-wrap {
     flex-wrap: wrap;
+}
+
+
+@media (min-width: 45em) {
+    .screen {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
 }
