@@ -10,5 +10,3 @@ Onepage layout with mobile first approch
 ## Tools:
 
 - Gulp
-
-
