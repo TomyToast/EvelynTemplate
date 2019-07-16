@@ -265,9 +265,12 @@
                 flex-direction: row;
             }
 
-            .fd-rr {
-                flex-direction: row-reverse;
-            }
+
         }
     }
+}
+
+.fd-rr {
+    display: flex;
+    flex-direction: row-reverse;
 }

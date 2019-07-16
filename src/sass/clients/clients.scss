@@ -12,6 +12,15 @@
 
         &-li {
             margin: 1em .5em;
+            cursor: pointer;
         }
+    }
+}
+
+.instagram {
+
+    &:hover {
+        background: #000;
+        color: red;
     }
 }

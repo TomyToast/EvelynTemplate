@@ -4,6 +4,7 @@ const heroDesc = document.querySelector(".hero-description");
 const meetEv = document.querySelector(".meetEvelyn");
 const meetEvBoard = document.querySelectorAll(".meetEvelyn-board");
 
+
 TweenMax.from([heroTitle, heroDesc], 2, {
     x: -100,
     opacity: 0,
