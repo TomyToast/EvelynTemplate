@@ -1,6 +1,6 @@
 # EvelynTemplate
 
-Work in progress...
+Onepage layout with mobile first approch
 
 ## Technologies:
 
@@ -10,3 +10,5 @@ Work in progress...
 ## Tools:
 
 - Gulp
+
+
